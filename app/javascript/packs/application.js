@@ -32,5 +32,5 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 // These are the lines you need to add.
-// import 'bootstrap';
+import 'bootstrap';
 import './stylesheets/application.scss';
