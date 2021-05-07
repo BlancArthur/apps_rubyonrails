@@ -1,8 +1,3 @@
-const { environment } = require('@rails/webpacker')
-
-module.exports = environment
-
-
 // This was already here.
 const { environment } = require('@rails/webpacker')
 
