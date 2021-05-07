@@ -33,4 +33,3 @@ require("channels")
 
 // These are the lines you need to add.
 import 'bootstrap';
-import './stylesheets/application.scss';
