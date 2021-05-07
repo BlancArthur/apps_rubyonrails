@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1 classs='center'>Oeuvres</h1>
+
+<table>
+  <%# <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead> %>
+
+  <p classs='center'> Ajouter une œuvre que vous aimées<p>
+
+  <tbody>
+    <% @oeuvres.each do |oeuvre| %>
+      <tr>
+        <td><%= oeuvre.title %></td>
+        <td><%= oeuvre.content %></td>
+        <td><%= oeuvre.image %></td>
+        <td><%= link_to 'Show', oeuvre %></td>
+        <td><%= link_to 'Edit', edit_oeuvre_path(oeuvre) %></td>
+        <td><%= link_to 'Destroy', oeuvre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+
+<br>
+
+<%= link_to 'New Oeuvre', new_oeuvre_path %>

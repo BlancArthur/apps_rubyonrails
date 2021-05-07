@@ -1,0 +1,2 @@
+class Tableau < ApplicationRecord
+end

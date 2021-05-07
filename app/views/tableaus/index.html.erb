@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tableaus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tableaus.each do |tableau| %>
+      <tr>
+        <td><%= tableau.title %></td>
+        <td><%= tableau.content %></td>
+        <td><%= tableau.image %></td>
+        <td><%= link_to 'Show', tableau %></td>
+        <td><%= link_to 'Edit', edit_tableau_path(tableau) %></td>
+        <td><%= link_to 'Destroy', tableau, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tableau', new_tableau_path %>

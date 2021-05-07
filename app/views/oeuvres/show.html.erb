@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @oeuvre.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @oeuvre.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @oeuvre.image %>
+</p>
+
+<%= link_to 'Edit', edit_oeuvre_path(@oeuvre) %> |
+<%= link_to 'Back', oeuvres_path %>

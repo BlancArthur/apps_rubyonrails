@@ -1,0 +1,2 @@
+class Oeuvre < ApplicationRecord
+end

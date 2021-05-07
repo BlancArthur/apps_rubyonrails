@@ -1,0 +1,31 @@
+<h1 class='mid'>Galerie</h1>
+
+<%# <button name="button" type="button" class='mid'>Ajouter une oeuvre</button> %>
+
+
+<br>
+
+<% @oeuvres.each do |oeuvre| %>
+      <tr>
+        <td><%= oeuvre.title %></td>
+        <td><%= oeuvre.content %></td>
+        <td><%= oeuvre.image %></td>
+        <td><%= link_to 'Show', oeuvre %></td>
+        <br>
+        <br>
+       
+      </tr>
+    <% end %>
+
+
+
+
+
+
+
+
+
+  
+
+
+ 
